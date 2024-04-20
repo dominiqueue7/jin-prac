@@ -21,6 +21,10 @@ func main() {
     r.GET("/product/:id", handlers.ProductDetailHandler)
     r.POST("/checkout", handlers.CheckoutHandler)
 
+    // 404 페이지 핸들러 설정
+    r.NoRoute(handlers.NoRouteHandler)
+
+
     r.Run(":8080")
 
 }
