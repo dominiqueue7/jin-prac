@@ -1,194 +1,92 @@
-<header>
-    <div class="container py-2">
-      <div class="row py-4 pb-0 pb-sm-4 align-items-center ">
+<!DOCTYPE html>
+<html lang="en">
 
-        <div class="col-sm-4 col-lg-3 text-center text-sm-start">
-          <div class="main-logo">
-            <a href="index.html">
-              <img src="static/images/logo.png" alt="logo" class="img-fluid">
-            </a>
-          </div>
+    <head>
+        <meta charset="utf-8">
+        <title>Fruitables - Vegetable Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="static/css/style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
         </div>
+        <!-- Spinner End -->
 
-        <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
-          <div class="search-bar border rounded-2 px-3 border-dark-subtle">
-            <form id="search-form" class="text-center d-flex align-items-center" action="" method="">
-              <input type="text" class="form-control border-0 bg-transparent"
-                placeholder="Search for more than 10,000 products" />
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="currentColor"
-                  d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
-              </svg>
-            </form>
-          </div>
-        </div>
-
-        <div
-          class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
-          <div class="support-box text-end d-none d-xl-block">
-            <span class="fs-6 secondary-font text-muted">Phone</span>
-            <h5 class="mb-0">+980-34984089</h5>
-          </div>
-          <div class="support-box text-end d-none d-xl-block">
-            <span class="fs-6 secondary-font text-muted">Email</span>
-            <h5 class="mb-0">waggy@gmail.com</h5>
-          </div>
-
-
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <hr class="m-0">
-    </div>
-
-    <div class="container">
-      <nav class="main-menu d-flex navbar navbar-expand-lg ">
-
-        <div class="d-flex d-lg-none align-items-end mt-3">
-          <ul class="d-flex justify-content-end list-unstyled m-0">
-            <li>
-              <a href="account.html" class="mx-3">
-                <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
-              </a>
-            </li>
-            <li>
-              <a href="wishlist.html" class="mx-3">
-                <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
-                aria-controls="offcanvasCart">
-                <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
-                <span class="position-absolute translate-middle badge rounded-circle bg-primary pt-2">
-                  03
-                </span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch"
-                aria-controls="offcanvasSearch">
-                <iconify-icon icon="tabler:search" class="fs-4"></iconify-icon>
-                </span>
-              </a>
-            </li>
-          </ul>
-
-        </div>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-
-          <div class="offcanvas-header justify-content-center">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-
-          <div class="offcanvas-body justify-content-between">
-            <select class="filter-categories border-0 mb-0 me-5">
-              <option>Shop by Category</option>
-              <option>Clothes</option>
-              <option>Food</option>
-              <option>Food</option>
-              <option>Toy</option>
-            </select>
-
-            <ul class="navbar-nav menu-list list-unstyled d-flex gap-md-3 mb-0">
-              <li class="nav-item">
-                <a href="/" class="nav-link active">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown"
-                  aria-expanded="false">Pages</a>
-                <ul class="dropdown-menu" aria-labelledby="pages">
-                  <li><a href="about.html" class="dropdown-item">About Us<span
-                        class="badge bg-success text-dark ms-2">PRO</span></a></li>
-                  <li><a href="shop.html" class="dropdown-item">Shop<span
-                        class="badge bg-success text-dark ms-2">PRO</span></a></li>
-                  <li><a href="single-product.html" class="dropdown-item">Single Product<span
-                        class="badge bg-success text-dark ms-2">PRO</span></a></li>
-                  <li><a href="cart.html" class="dropdown-item">Cart<span
-                        class="badge bg-success text-dark ms-2">PRO</span></a></li>
-                  <li><a href="wishlist.html" class="dropdown-item">Wishlist<span
-                        class="badge bg-success text-dark ms-2">PRO</span></a></li>
-                  <li><a href="checkout.html" class="dropdown-item">Checkout<span
-                        class="badge bg-success text-dark ms-2">PRO</span></a></li>
-                  <li><a href="blog.html" class="dropdown-item">Blog<span
-                        class="badge bg-success text-dark ms-2">PRO</span></a></li>
-                  <li><a href="single-post.html" class="dropdown-item">Single Post<span
-                        class="badge bg-success text-dark ms-2">PRO</span></a></li>
-                  <li><a href="contact.html" class="dropdown-item">Contact<span
-                        class="badge bg-success text-dark ms-2">PRO</span></a></li>
-                  <li><a href="faqs.html" class="dropdown-item">FAQs<span
-                        class="badge bg-success text-dark ms-2">PRO</span></a></li>
-                  <li><a href="account.html" class="dropdown-item">Account<span
-                        class="badge bg-success text-dark ms-2">PRO</span></a></li>
-                  <li><a href="thank-you.html" class="dropdown-item">Thankyou<span
-                        class="badge bg-success text-dark ms-2">PRO</span></a></li>
-                  <li><a href="error.html" class="dropdown-item">Error 404<span
-                        class="badge bg-success text-dark ms-2">PRO</span></a></li>
-                  <li><a href="styles.html" class="dropdown-item">Styles<span
-                        class="badge bg-success text-dark ms-2">PRO</span></a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="shop.html" class="nav-link">Shop</a>
-              </li>
-              <li class="nav-item">
-                <a href="blog.html" class="nav-link">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Others</a>
-              </li>
-              <li class="nav-item">
-                <a href="https://templatesjungle.gumroad.com/l/waggy-pet-shop-ecommerce-html-website-template" class="nav-link fw-bold text-dark" target="_blank">GET PRO</a>
-              </li>
-            </ul>
-
-            <div class="d-none d-lg-flex align-items-end">
-              <ul class="d-flex justify-content-end list-unstyled m-0">
-                <li>
-                  <a href="account.html" class="mx-3">
-                    <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
-                  </a>
-                </li>
-                <li>
-                  <a href="wishlist.html" class="mx-3">
-                    <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
-                  </a>
-                </li>
-
-                <li class="">
-                  <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
-                    aria-controls="offcanvasCart">
-                    <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
-                    <span class="position-absolute translate-middle badge rounded-circle bg-primary pt-2">
-                      03
-                    </span>
-                  </a>
-                </li>
-              </ul>
-
+        <!-- Navbar start -->
+        <div class="container-fluid fixed-top">
+            <div class="container topbar bg-primary d-none d-lg-block">
+                <div class="d-flex justify-content-between">
+                    <div class="top-info ps-2">
+                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small>
+                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small>
+                    </div>
+                    <div class="top-link pe-2">
+                        <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
+                        <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
+                        <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
+                    </div>
+                </div>
             </div>
-
-          </div>
-
+            <div class="container px-0">
+                <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Fruitables</h1></a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="/" class="nav-item nav-link active">Home</a>
+                            <a href="shop/" class="nav-item nav-link">Shop</a>
+                            <a href="shop-detail.html" class="nav-item nav-link">Shop Detail</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="cart.html" class="dropdown-item">Cart</a>
+                                    <a href="chackout.html" class="dropdown-item">Chackout</a>
+                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                    <a href="404.html" class="dropdown-item">404 Page</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <div class="d-flex m-3 me-0">
+                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                            <a href="#" class="position-relative me-4 my-auto">
+                                <i class="fa fa-shopping-bag fa-2x"></i>
+                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                            </a>
+                            <a href="#" class="my-auto">
+                                <i class="fas fa-user fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
-
-      </nav>
-
-
-
-    </div>
-  </header>
+        <!-- Navbar End -->
+    </body>

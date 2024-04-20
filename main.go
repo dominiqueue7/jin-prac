@@ -17,6 +17,7 @@ func main() {
 
     // 라우팅
     r.GET("/", handlers.IndexHandler)
+    r.GET("/shop", handlers.ShopHandler)
     r.GET("/product/:id", handlers.ProductDetailHandler)
     r.POST("/checkout", handlers.CheckoutHandler)
 
