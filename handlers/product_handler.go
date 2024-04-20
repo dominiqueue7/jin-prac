@@ -14,8 +14,8 @@ func ProductDetailHandler(c *gin.Context) {
 
     // 해당 상품의 상세 정보를 데이터베이스에서 조회합니다.
     // 여기서는 간단히 상품 ID만 출력하도록 예시로 작성합니다.
-    c.HTML(http.StatusOK, "product_detail.html", gin.H{
-        "title": "상품 상세 페이지",
+    c.HTML(http.StatusOK, "shop_detail.html", gin.H{
+        "title": "Product Detail Page",
         "productId": id,
     })
 }
